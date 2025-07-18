@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import rehypeHighlight from 'rehype-highlight';
 import 'highlight.js/styles/github.css'; // 选择你喜欢的代码高亮样式
 
 // ... 其他导入保持不变
@@ -13,9 +11,7 @@ const MarkdownRenderer = ({ content }) => {
   
   return (
     <div className="markdown-content">
-      <ReactMarkdown
-        // ...其他props
-      >
+      <ReactMarkdown>
         {pureContent}
       </ReactMarkdown>
     </div>

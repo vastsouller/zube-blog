@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import loadPosts from '../utils/getPosts';
-import ScrollStack, { ScrollStackItem } from '../components/ScrollStack'
+import ScrollStack, { ScrollStackItem } from '../components/ScrollStack/ScrollStack';
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);

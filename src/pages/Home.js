@@ -1,10 +1,19 @@
 import PostList from '../components/PostList';
+import GlitchText from '../components/GlitchText/GlitchText'
 
 const Home = () => {
   return (
     <div className="home" style={styles.container}>
       <header style={styles.header}>
-        <span>Welcome to Zubeneschamali's Blog</span>
+        <GlitchText
+          speed={1}
+          enableShadows={true}
+          enableOnHover={true}
+          className='custom-class'
+        >
+          Welcome to Zubeneschamali's Blog
+        </GlitchText>
+        Here, I record my technical learning, practical experience and industry insights, hoping to bring inspiration to you who are also on the path of coding.
       </header>
       <main style={styles.main}>
         <PostList />
@@ -22,7 +31,7 @@ const styles = {
   },
   header: {
     with: '100%',
-    height: '300px'
+    marginBottom: '40px'
   },
   title: {
     fontSize: '2.5rem',

@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="app">
         <Header />
-        <main>
+        <main style={{background: '#000000'}}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

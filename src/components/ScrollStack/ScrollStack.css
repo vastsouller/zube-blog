@@ -13,7 +13,7 @@
 }
 
 .scroll-stack-inner {
-  padding: 20vh 5rem 50rem;
+  padding: 12vh 20rem 41rem;
   min-height: 100vh;
 }
 
@@ -22,6 +22,7 @@
 }
 
 .scroll-stack-card {
+  background: #fff;
   transform-origin: top center;
   will-change: transform, filter;
   backface-visibility: hidden;

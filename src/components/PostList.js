@@ -21,11 +21,13 @@ const PostList = () => {
       <ScrollStack>
         {posts.map((post) => (
           <ScrollStackItem key={post.slug}>
-            <h3>
-              <Link to={`/post/${post.slug}`}>{post.title}</Link>
-            </h3>
-            {post.date && <p className="post-date">{post.date}</p>}
-            {post.excerpt && <p>{post.excerpt}</p>}
+            <div onClick={() => window.open(`/post/${post.slug}`)}>
+              <h3>
+                <span>{post.title}</span>
+              </h3>
+              {post.date && <p className="post-date">{post.date}</p>}
+              {post.excerpt && <p>{post.excerpt}</p>}
+            </div>
           </ScrollStackItem>
         ))}
       </ScrollStack>

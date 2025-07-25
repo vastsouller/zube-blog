@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
         <main style={{background: '#000000'}}>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -58,6 +58,7 @@ footer {
 .post-detail {
   max-width: 800px;
   margin: 0 auto;
+  background: #fff;
 }
 
 /* Markdown内容样式 */
